@@ -41,3 +41,11 @@ li{
     float:left;
     padding: 10px;
 }
+a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    a:visited{
+    text-decoration: none;
+    color: black;
