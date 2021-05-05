@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <style>
+      h1,h2 {font-family: Arial, Helvetica, sans-serif; color: white;}
+      li {font-family: Arial, Helvetica, sans-serif; color:white; font-size: 2vw;}
+      body {background-color: black;}
+      .awayfromnav {padding-top: 1em;}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUWI</title>
+  </head>
+  <body>
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+        <a href="twice.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">TWICE</a>
+        <a href="itzy.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">ITZY</a>
+        <a href="blackpink.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">BLACKPINK</a>
+      </div>
+    
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="twice.html" class="w3-bar-item w3-button w3-padding-large">TWICE</a>
+        <a href="itzy.html" class="w3-bar-item w3-button w3-padding-large">ITZY</a>
+        <a href="blackpink.html" class="w3-bar-item w3-button w3-padding-large">BLACKPINK</a>
+      </div>
+    </div>
+    <h1 class="awayfromnav">keep up w itzy</h1>
+    <h2>Latest Song:</h2>
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/877169215&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/wiktoria-filipowska-879194668" title="‧͙⁺˚*･༓☾ ☽༓･*˚⁺‧͙" target="_blank" style="color: #cccccc; text-decoration: none;">‧͙⁺˚*･༓☾ ☽༓･*˚⁺‧͙</a> · <a href="https://soundcloud.com/wiktoria-filipowska-879194668/itzy-not-shy" title="ITZY - Not Shy" target="_blank" style="color: #cccccc; text-decoration: none;">ITZY - Not Shy</a></div>
+    <h2>Latest Album:</h2>
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1250062732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/l2share" title="L2Share" target="_blank" style="color: #cccccc; text-decoration: none;">L2Share</a> · <a href="https://soundcloud.com/l2share/sets/itzy-guess-who-in-the-morning" title="ITZY (있지) - GUESS WHO &#x27;MAFIA 마.피.아. In the morning&#x27;" target="_blank" style="color: #cccccc; text-decoration: none;">ITZY (있지) - GUESS WHO &#x27;MAFIA 마.피.아. In the morning&#x27;</a></div>
+
+  </body>
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+</html>
