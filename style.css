@@ -1,0 +1,52 @@
+/*fonts*/
+
+/*scroll and resets*/
+:root{
+  /*spacing variables*/
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+  /*aesthetic variables*/
+  --border-radius: 12px;
+  --font-color: #323232
+}
+html{
+  scroll-behavior: smooth;
+}
+
+html,body{
+  height:100%;
+  color: var(--font-color);
+}
+
+body{
+  margin:0;
+  padding:0 var(--spacing-3);
+  max-width: 900px;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+}
+.heart{
+  color:red;
+}
+
+nav{
+  display:flex;
+  align-items: center;
+  padding: var(--spacing-3) 0;
+}
+
+.nav-items{
+  display:flex;
+  list-style-type: none;
+  padding:0;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+}
+
+.nav-item{
+  margin: var(--spacing-1);
+}
