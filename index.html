@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio project</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
   <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a61d2ae229.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -15,11 +17,24 @@
         <li class="nav-item"><a href="#about">about me</a></li>
         <li class="nav-item"><a href="#skills">skills</a></li>
         <li class="nav-item"><a href="#contact">contact</a></li>
-        <li class="nav-item">icon</li>
+        <li class="nav-item"><i class="fas fa-lightbulb" id="switch" onclick="swapmode()"></i></li>
       </ul>
     </nav>
   <main>
-    <section id="about"></section>
+    <section id="about">
+      <div class="about-container">
+        <div class="about-text-container">
+          <h2>about me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet velit diam. Duis ut sollicitudin mauris. Aliquam erat volutpat. Etiam et nisi volutpat, lobortis ex sed, porttitor lectus. Vestibulum commodo convallis mauris. Aenean dolor enim, bibendum ut eleifend sit amet, facilisis eget odio. Vestibulum enim leo, tincidunt quis semper sed, dapibus vitae lacus. Fusce hendrerit dolor at nulla venenatis posuere. Pellentesque pulvinar, nunc ut dapibus laoreet, est enim accumsan erat, aliquet posuere orci neque in lacus.
+          </p>
+          <p>
+            Vestibulum nec enim libero. Sed eget eros quis ipsum maximus aliquam. Nunc porttitor diam eget eros tempus cursus. Proin laoreet tristique placerat. 
+          </p>
+        </div>
+        <img src="me-ella.jpg" alt="A photo of me and my dog Ella" class="portrait">
+      </div>
+    </section>
     <section id="projects"></section>
     <section id="skills"></section>
   </main>

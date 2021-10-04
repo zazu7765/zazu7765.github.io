@@ -11,6 +11,7 @@
   --border-radius: 12px;
   --font-color: #323232
 }
+
 html{
   scroll-behavior: smooth;
 }
@@ -28,9 +29,19 @@ body{
   display:flex;
   flex-direction: column;
 }
-.heart{
-  color:red;
+
+section{
+  padding: var(--spacing-3) 0;
 }
+
+/*dark mode toggle*/
+
+.dark-mode{
+  background-color: var(--font-color);
+  color:white;
+}
+
+/*navigation*/
 
 nav{
   display:flex;
@@ -49,4 +60,41 @@ nav{
 
 .nav-item{
   margin: var(--spacing-1);
+}
+
+a{
+  color: orange;
+  text-decoration: none;
+}
+
+/*about me section*/
+
+.about-container{
+  display: flex;
+}
+
+.about-text-container{
+  margin-right: var(--spacing-3);
+}
+
+.portrait{
+  width:300px;
+  height:auto;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  border: orange 2px solid;
+}
+
+/*projects section*/
+
+/*skills section*/
+
+/*footer*/
+.heart{
+  color:red;
+}
+
+footer{
+  margin-top:auto;
+  text-align: center;
 }
