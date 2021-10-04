@@ -1,100 +1,108 @@
 /*fonts*/
 
 /*scroll and resets*/
-:root{
-  /*spacing variables*/
-  --spacing-1: 8px;
-  --spacing-2: 12px;
-  --spacing-3: 16px;
-  --spacing-4: 24px;
-  /*aesthetic variables*/
-  --border-radius: 12px;
-  --font-color: #323232
+:root {
+	/*spacing variables*/
+	--spacing-1: 8px;
+	--spacing-2: 12px;
+	--spacing-3: 16px;
+	--spacing-4: 24px;
+	/*aesthetic variables*/
+	--border-radius: 12px;
+	--font-color: #323232;
+  --secondary-color:rgb(248, 183, 63);
 }
 
-html{
-  scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }
 
-html,body{
-  height:100%;
-  color: var(--font-color);
+html,
+body {
+	height: 100%;
+	color: var(--font-color);
 }
 
-body{
-  margin:0;
-  padding:0 var(--spacing-3);
-  max-width: 900px;
-  margin: 0 auto;
-  display:flex;
-  flex-direction: column;
+body {
+	margin: 0;
+	padding: 0 var(--spacing-3);
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
-section{
-  padding: var(--spacing-3) 0;
+section {
+	padding: var(--spacing-3) 0;
 }
 
 /*dark mode toggle*/
 
-.dark-mode{
-  background-color: var(--font-color);
-  color:white;
+.dark-mode {
+	background-color: var(--font-color);
+	color: white;
 }
 
 /*navigation*/
 
-nav{
-  display:flex;
-  align-items: center;
-  padding: var(--spacing-3) 0;
+nav {
+	display: flex;
+	align-items: center;
+	padding: var(--spacing-3) 0;
 }
 
-.nav-items{
-  display:flex;
-  list-style-type: none;
-  padding:0;
-  align-items: center;
-  margin: 0;
-  margin-left: auto;
+.nav-items {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	align-items: center;
+	margin: 0;
+	margin-left: auto;
 }
 
-.nav-item{
-  margin: var(--spacing-1);
+.nav-item {
+	margin: var(--spacing-1);
 }
 
-a{
-  color: orange;
-  text-decoration: none;
+a {
+	color: var(--secondary-color);
+	text-decoration: none;
 }
 
 /*about me section*/
 
-.about-container{
-  display: flex;
+.about-container {
+	display: flex;
 }
 
-.about-text-container{
-  margin-right: var(--spacing-3);
+.about-text-container {
+	margin-right: var(--spacing-3);
 }
 
-.portrait{
-  width:300px;
-  height:auto;
-  border-radius: var(--border-radius);
-  flex-shrink: 0;
-  border: orange 2px solid;
+.portrait {
+	width: 300px;
+	height: auto;
+	border-radius: var(--border-radius);
+	flex-shrink: 0;
+	border: var(--secondary-color) 2px solid;
 }
 
 /*projects section*/
+.project-title h3{
+  display: inline;
+}
 
+summary::marker{
+  color:var(--secondary-color);
+}
 /*skills section*/
 
 /*footer*/
-.heart{
-  color:red;
+.heart {
+	color: red;
 }
 
-footer{
-  margin-top:auto;
-  text-align: center;
+footer {
+	margin-top: auto;
+	text-align: center;
 }
