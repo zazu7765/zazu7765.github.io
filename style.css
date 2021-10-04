@@ -88,7 +88,8 @@ a {
 
 .portrait {
 	width: 300px;
-	height: auto;
+	height:300px;
+	object-fit: cover;
 	border-radius: var(--border-radius);
 	flex-shrink: 0;
 	border: var(--secondary-color) 2px solid;
@@ -114,6 +115,7 @@ p{
 	width: 100%;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	color: var(--secondary-color);
 }
 .skills-container>*{
 	font-size:2em;
@@ -134,4 +136,10 @@ footer {
 footer i{
 	font-size: 1.5em;
 	padding: 0.2em;
+}
+/*media queries*/
+@media only screen and (max-width:600px){
+	.about-container{
+		flex-direction: column;
+	}
 }
