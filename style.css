@@ -1,5 +1,8 @@
 /*fonts*/
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Mono&family=Lora&family=Overpass:ital,wght@1,300&display=swap');
+h2{
+	font-family: 'Fira Mono', monospace;
+}
 /*scroll and resets*/
 :root {
   font-size: 16px;
@@ -45,7 +48,9 @@ section {
 }
 
 /*navigation*/
-
+.logo{
+	font-family: 'Overpass', sans-serif;
+}
 nav {
 	display: flex;
 	align-items: center;
@@ -63,6 +68,7 @@ nav {
 
 .nav-item {
 	margin: var(--spacing-1);
+	font-family: 'Fira Mono', monospace;
 }
 
 a {
@@ -91,6 +97,7 @@ a {
 /*projects section*/
 .project-title h3{
   display: inline;
+	font-family: 'Fira Mono', monospace;
 }
 
 summary::marker{
@@ -99,6 +106,7 @@ summary::marker{
 p{
   line-height: 20px;
   font-size: 1rem;
+	font-family:'Lora', serif;
 }
 /*skills section*/
 .skills-container{
@@ -120,4 +128,10 @@ p{
 footer {
 	margin-top: auto;
 	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+}
+footer i{
+	font-size: 1.5em;
+	padding: 0.2em;
 }
