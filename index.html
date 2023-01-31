@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Daniel's portfolio website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="index.css" rel="stylesheet">
   </head>
   <body>
-    <h1> daniel's portfolio </h1>
-    <p> Daniel Ibanescu is a Computer Science student at Toronto Metropolitan University.</p>
+    <nav class="flex items-center justify-between p-4 pl-1 ">
+    <div class="flex items-center">
+      <h1 class="text-2xl font-bold text-gray-900"><a href="#">daniel's portfolio</a> </h1>
+    </div>
+    <div class="items-center hidden md:flex">
+      <a class="px-4 font-medium text-gray-900 hover:text-gray-700" href="#">About</a>
+      <a class="px-4 font-medium text-gray-900 hover:text-gray-700" href="#">Experience</a>
+    </div>
+
+    </nav>
+    <hr>
+    <div class="bg-gray-800 text-white py-4 ">
+      <h1 class="text-lg font-medium mx-auto max-w-screen-sm text-center ">Website is WIP</h1>
+    </div>
+    <div class="pl-1">
+    <p>Daniel Ibanescu is a Computer Science student at Toronto Metropolitan University.</p>
+    <br>
+    <h2 class="underline font-medium text-xl ">Extracurriculars</h2>
+    <ul class="list-none p-0">
+      <li class="mb-4">
+        <div class="mb-2">
+          <h3 class="text-lg font-medium text-gray-900">Software Team Lead</h3>
+          <p class="font-semibold text-sm text-purple-900">Metropolitan Aerospace & Combustion Hub (MACH)</p>
+          <p class="text-sm text-gray-600">September 2023 - Present</p>
+        </div>
+        <ol>
+          <li class=" py-1 text-sm text-gray-900">Co-Leading a team of like minded individuals to work on various pieces of software</li>
+          <li class=" py-1 text-sm text-gray-900">Designing custom avionics software in C/C++ for automatic control of actuation sequences using real-time data analytics</li>
+          <li class=" py-1 text-sm text-gray-900">Developed real-time peer-to-peer communication over Fiber/Ethernet using TCP/IP sockets (C++ -> Python)</li>
+        </ol>
+      </li>
+      <li class="mb-4">
+        <div class="mb-2">
+          <h3 class="text-lg font-medium text-gray-900">Business Development Intern</h3>
+          <p class="font-semibold text-sm text-orange-300">Robotics for All</p>
+          <p class="text-sm text-gray-600">January 2022 - September 2023</p>
+        </div>
+        <ol>
+          <li class=" py-1 text-sm text-gray-900">Sit adipisicing id esse incididunt ea officia qui veniam aliqua irure aute Lorem excepteur cupidatat.</li>
+          <li class=" py-1 text-sm text-gray-900">Irure in eu eu aliquip tempor do non do eu laborum elit ea.</li>
+          <li class=" py-1 text-sm text-gray-900">Non ipsum aute culpa anim ea labore eiusmod ea quis magna velit ullamco cillum ipsum culpa.</li>
+        </ol>
+      </li>
+    </ul>
+  </div>
   </body>
 </html>
